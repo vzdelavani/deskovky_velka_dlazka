@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Výběr deskových her</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .filter-table {
+      max-width: 500px;
+    }
+
+    .filter-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      align-items: center;
+      margin-bottom: 12px;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    select {
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    #results {
+  margin-top: 30px;
+  max-width: 700px;
+}
+
+.game-row {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+}
+
+.game-row strong {
+  font-size: 17px;
+}
+
+.game-row hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* PANEL PRO FILTRY */
+.filter-table {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* TLAČÍTKO */
+button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #234e87;
+}
+
+.game-row span.tema {
+  font-style: italic;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+
+<h1>Vyberte deskovou hru</h1>
+
+<form id="filters" class="filter-table">
+
+  <div class="filter-row">
+    <label for="pocet-hracu">Počet hráčů</label>
+    <select id="pocet-hracu">
+      <option value="">Nezáleží</option>
+      <option value="pro jednoho">Pro jednoho</option>
+      <option value="pro dva">Pro dva</option>
+      <option value="mala skupina (3-4)">Malá skupina (3–4)</option>
+      <option value="vetsi skupina (5+)">Větší skupina (5+)</option>
+    </select>
+  </div>
+
+  <div class="filter-row">
+    <label for="herni-doba">Herní doba</label>
+    <select id="herni-doba">
+      <option value="">Nezáleží</option>
+      <option value="do 15 minut">Do 15 minut</option>
+      <option value="do 30 minut">Do 30 minut</option>
+      <option value="30-60 minut">30–60 minut</option>
+      <option value="60-120 minut">60–120 minut</option>
+      <option value="120+ minut">120+ minut</option>
+    </select>
+  </div>
+
+  <div class="filter-row">
+    <label for="mira-premysleni">Jak moc u hry chcete přemýšlet?</label>
+    <select id="mira-premysleni">
+      <option value="">Nezáleží</option>
+      <option value="oddechova hra">Oddechová hra</option>
+      <option value="premysleci hra">Přemýšlecí hra</option>
+      <option value="narocna hra">Náročná hra</option>
+    </select>
+  </div>
+
+  <div class="filter-row">
+    <label for="typ-hry">Typ hry</label>
+    <select id="typ-hry">
+      <option value="">Nezáleží</option>
+      <option value="kooperativni">Kooperativní</option>
+      <option value="deduktivni">Deduktivní</option>
+      <option value="postrehova">Postřehová</option>
+      <option value="vedomostni">Vědomostní</option>
+      <option value="strategicka">Strategická</option>
+      <option value="ekonomicka">Ekonomická</option>
+      <option value="pribehova">Příběhová</option>
+      <option value="rodinna">Rodinná</option>
+      <option value="party">Párty</option>
+      <option value="zavodni">Závodní</option>
+      <option value="logicka">Logická</option>
+    </select>
+  </div>
+
+  <div class="filter-row">
+    <label for="tema">Téma</label>
+    <select id="tema">
+      <option value="">Nezáleží</option>
+      <option value="historie">Historie</option>
+      <option value="fantasy_mytologie">Fantasy a mytologie</option>
+      <option value="scifi">Sci-fi</option>
+      <option value="zvirata">Zvířata</option>
+      <option value="sport">Sport</option>
+      <option value="vikingove">Vikingové</option>
+      <option value="priroda">Příroda</option>
+      <option value="popkultura">Popkultura</option>
+      <option value="dobrodruzstvi">Dobrodružství</option>
+      <option value="abstraktni">Abstraktní</option>
+      <option value="soucasnost">Současnost</option>
+      <option value="detektivni">Detektivní</option>
+      <option value="hadanky">Hádanky</option>
+      <option value="jidlo">Jídlo</option>
+    </select>
+  </div>
+
+  <div class="actions">
+    <button type="button" id="search-btn">Hledat</button>
+  </div>
+
+</form>
+  
+<div id="results"></div>
+
+<script>
+let games = [];
+
+/* ===== LABELS (UI vrstva) ===== */
+
+const LABELS = {
+  hraci: {
+  "pro jednoho": "Pro jednoho",
+  "pro dva": "Pro dva",
+  "mala skupina (3-4)": "Malá skupina (3–4)",
+  "vetsi skupina (5+)": "Větší skupina (5+)"
+  },
+  mira: {
+    "oddechova hra": "Oddechová hra",
+    "premysleci hra": "Přemýšlecí hra",
+    "narocna hra": "Náročná hra"
+  },
+  typ: {
+    kooperativni: "Kooperativní",
+    deduktivni: "Deduktivní",
+    postrehova: "Postřehová",
+    vedomostni: "Vědomostní",
+    strategicka: "Strategická",
+    ekonomicka: "Ekonomická",
+    pribehova: "Příběhová",
+    rodinna: "Rodinná",
+    party: "Párty",
+    zavodni: "Závodní",
+    logicka: "Logická"
+  },
+  tema: {
+    historie: "Historie",
+    fantasy_mytologie: "Fantasy a mytologie",
+    scifi: "Sci-fi",
+    zvirata: "Zvířata",
+    sport: "Sport",
+    vikingove: "Vikingové",
+    priroda: "Příroda",
+    popkultura: "Popkultura",
+    dobrodruzstvi: "Dobrodružství",
+    abstraktni: "Abstraktní",
+    soucasnost: "Současnost",
+    detektivni: "Detektivní",
+    hadanky: "Hádanky",
+    jidlo: "Jídlo"
+  }
+};
+
+
+/* ===== NAČTENÍ + NORMALIZACE ===== */
+
+fetch("./games.json")
+  .then(res => res.json())
+  .then(data => {
+
+    games = data.games.map(g => ({
+  ...g,
+  tema: g.tema?.trim().toLowerCase(),
+  mira_premysleni: g.mira_premysleni?.trim().toLowerCase(),
+  typ_hry: g.typ_hry?.map(t => t.trim().toLowerCase()),
+  pocet_hracu: g.pocet_hracu?.map(p => p.trim())
+}));
+
+    renderGames(games);
+  });
+
+
+/* ===== RENDER ===== */
+
+function renderGames(list) {
+  const results = document.getElementById("results");
+  results.innerHTML = "";
+
+  if (!list.length) {
+    results.innerHTML = "<p>Žádné hry nevyhovují filtru.</p>";
+    return;
+  }
+
+  list.forEach(game => {
+
+    const miraLabel =
+      LABELS.mira?.[game.mira_premysleni] ?? game.mira_premysleni ?? "—";
+
+    const typLabel =
+      game.typ_hry
+        ?.map(t => LABELS.typ?.[t] ?? t)
+        .join(", ") ?? "—";
+
+    const temaLabel =
+      LABELS.tema?.[game.tema] ?? game.tema ?? "—";
+
+    const div = document.createElement("div");
+    div.classList.add("game-row");
+
+    const hraciLabel =
+      game.pocet_hracu
+        ?.map(h => LABELS.hraci?.[h] ?? h)
+        .join(", ") ?? "—";
+
+    div.innerHTML = `
+      <strong>${game.nazev}</strong><br>
+      Počet hráčů: ${hraciLabel}<br>
+      Herní doba: ${game.herni_doba ?? "—"}<br>
+      Míra přemýšlení: ${miraLabel}<br>
+      Typ hry: ${typLabel}<br>
+      Téma: ${temaLabel}
+      <hr>
+    `;
+
+    results.appendChild(div);
+  });
+}
+
+
+/* ===== FILTR ===== */
+
+document.getElementById("search-btn").addEventListener("click", () => {
+
+  const selHraci = document.getElementById("pocet-hracu").value;
+  const selDoba = document.getElementById("herni-doba").value;
+  const selPremysleni = document.getElementById("mira-premysleni").value.toLowerCase();
+  const selTyp = document.getElementById("typ-hry").value.toLowerCase();
+  const selTema = document.getElementById("tema").value.toLowerCase();
+
+  const filtered = games.filter(game => {
+
+    if (selHraci && !game.pocet_hracu?.includes(selHraci)) return false;
+    if (selDoba && game.herni_doba !== selDoba) return false;
+    if (selPremysleni && game.mira_premysleni !== selPremysleni) return false;
+    if (selTyp && !game.typ_hry?.includes(selTyp)) return false;
+    if (selTema && game.tema !== selTema) return false;
+
+    return true;
+  });
+
+  renderGames(filtered);
+});
+</script>
+
+
+</body>
+</html>
