@@ -1,93 +1,188 @@
 {
-"games": [
-  {
-    "nazev": "Přines si svou knihu",
-    "vek": ["6-8", "9-12"],
-    "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+  "games": [
+    {
+      "nazev": "Přines si svou knihu",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+      "herni_doba": "do 30 minut",
+      "narocnost": "oddechova hra",
+      "zanr": ["vzdelavaci"], 
+      "tema": "soucasnost"
+    },
+    {
+      "nazev": "Agricola",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+      "herni_doba": "60-120 minut",
+      "narocnost": "narocna hra",
+      "zanr": ["ekonomicka", "strategicka"],
+      "tema": "historie"
+    },
+    {
+      "nazev": "Timeline: Česko",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+      "herni_doba": "do 15 minut",
+      "narocnost": "oddechova hra",
+      "zanr": ["vedomostni", "historie"],
+      "tema": "historie"
+    },
+    {
+      "nazev": "Keltis",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+      "herni_doba": "do 30 minut",
+      "narocnost": "premysleci hra",
+      "zanr": ["logicka", "strategicka"],
+      "tema": "abstraktni"
+    },
+    {
+      "nazev": "Kde leží Řáholec?",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+      "herni_doba": "do 30 minut",
+      "narocnost": "premysleci hra",
+      "zanr": ["vedomostni"],
+      "tema": "historie"
+    },
+    {
+      "nazev": "Kde leží Kulikov?",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+      "herni_doba": "do 30 minut",
+      "narocnost": "premysleci hra",
+      "zanr": ["vedomostni"],
+      "tema": "historie"
+    },
+    {
+      "nazev": "Břink! – Potopené poklady",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+      "herni_doba": "30-60 minut",
+      "narocnost": "premysleci hra",
+      "zanr": ["strategicka", "budovatelske"],
+      "tema": "fantasy_mytologie"
+    },
+    {
+      "nazev": "12 říší",
+      "pocet_hracu": ["mala skupina (3-4)", "vetsi skupina (5+)"],
+      "herni_doba": "30-60 minut",
+      "narocnost": "oddechova hra",
+      "zanr": ["party"],
+      "tema": "fantasy_mytologie"
+    },
+    {
+      "nazev": "Břink! – Velká podzemní loupež",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+      "herni_doba": "30-60 minut",
+      "narocnost": "premysleci hra",
+      "zanr": ["strategicka"],
+      "tema": "fantasy_mytologie"
+    },
+    {
+      "nazev": "Tzolk'in: Mayský kalendář",
+      "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+      "herni_doba": "60-120 minut",
+      "narocnost": "narocna hra",
+      "zanr": ["strategicka"],
+      "tema": "historie"
+    },
+    {
+    "nazev": "Mozkovna",
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
-    "narocnost": "jednoducha",
-    "zanr": ["vzdelavaci", "kreativni"],
-    "tema": "literatura"
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": "hadanky"
   },
   {
-    "nazev": "Agricola",
-    "vek": ["12+", "13+"],
-    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
-    "herni_doba": "60+ minut",
-    "narocnost": "narocnejsi",
-    "zanr": ["strategicke", "ekonomicke"],
-    "tema": "farma"
+    "nazev": "Vesmír – Mysli a spojuj",
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "do 30 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka", "vedomostni"],
+    "tema": null
   },
   {
-    "nazev": "Timeline: Česko",
-    "vek": ["8+", "9-12"],
-    "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+    "nazev": "ALBI IQ Fitness – Vizualní úlohy",
+    "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 15 minut",
-    "narocnost": "jednoducha",
-    "zanr": ["vzdelavaci"],
-    "tema": "historie"
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": null
   },
   {
-    "nazev": "Keltis",
-    "vek": ["8+", "9-12"],
+    "nazev": "IQ Fitness – Optické klamy",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 15 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+    "nazev": "IQ Fitness – Neobyčejné příhody",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 15 minut",
+    "mira_premysleni": "oddechova hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+    "nazev": "IQ Fitness – Grafické úlohy",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 15 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+    "nazev": "IQ Fitness – Logické úlohy",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 15 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+    "nazev": "Zvířata – Mysli a spojuj",
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
-    "narocnost": "stredni",
-    "zanr": ["logicke"],
-    "tema": "prehistorie"
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["vedomostni"],
+    "tema": "zvirata"
   },
   {
-    "nazev": "Kde leží Řáholec?",
-    "vek": ["8+", "9-12"],
+    "nazev": "Lustovky Expert",
+    "pocet_hracu": ["pro dva"],
+    "herni_doba": "do 30 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": "hadanky"
+  },
+  {
+    "nazev": "IQ Fitness – Matematické úlohy",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 15 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+    "nazev": "Babi, dědo, hrajeme – Logika",
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
-    "narocnost": "jednoducha",
-    "zanr": ["vzdelavaci"],
-    "tema": "geografie"
+    "mira_premysleni": "oddechova hra",
+    "typ_hry": ["vedomostni", "rodinna"],
+    "tema": null
   },
   {
-    "nazev": "Kde leží Kulikov?",
-    "vek": ["8+", "9-12"],
+    "nazev": "Hry pro seniory – Paměť",
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
-    "narocnost": "jednoducha",
-    "zanr": ["vzdelavaci"],
-    "tema": "geografie"
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["vedomostni", "rodinna"],
+    "tema": "soucasnost"
   },
   {
-    "nazev": "Brink: Potopené poklady",
-    "vek": ["6-8", "9-12"],
+    "nazev": "Hry pro seniory – Slova",
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
-    "narocnost": "stredni",
-    "zanr": ["dobrodruzstvi", "postrehove"],
-    "tema": "podmorsky"
-  },
-  {
-    "nazev": "12 říší",
-    "vek": ["9-12", "13+"],
-    "pocet_hracu": ["mala skupina (3-4)", "vetsi skupina (5+)"],
-    "herni_doba": "30-60 minut",
-    "narocnost": "stredni",
-    "zanr": ["strategicke"],
-    "tema": "mytologie"
-  },
-  {
-    "nazev": "Brink: Velká podzemní loupež",
-    "vek": ["6-8", "9-12"],
-    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
-    "herni_doba": "30-60 minut",
-    "narocnost": "stredni",
-    "zanr": ["dobrodruzstvi"],
-    "tema": "podzemni"
-  },
-  {
-    "nazev": "Tzolk'in: Mayský kalendář",
-    "vek": ["12+", "13+"],
-    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
-    "herni_doba": "60+ minut",
-    "narocnost": "narocnejsi",
-    "zanr": ["strategicke"],
-    "tema": "historie"
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["vedomostni", "rodinna"],
+    "tema": "soucasnost"
   }
-]
+  ]
+}
