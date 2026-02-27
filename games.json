@@ -174,7 +174,7 @@
     "herni_doba": "do 30 minut",
     "mira_premysleni": "premysleci hra",
     "typ_hry": ["vedomostni", "rodinna"],
-    "tema": "soucasnost"
+    "tema": null
   },
   {
     "nazev": "Hry pro seniory – Slova",
@@ -182,7 +182,47 @@
     "herni_doba": "do 30 minut",
     "mira_premysleni": "premysleci hra",
     "typ_hry": ["vedomostni", "rodinna"],
-    "tema": "soucasnost"
-  }
+    "tema": null
+  },
+    {
+    "nazev": "Mozkovna IQ Fitness 3D Řetěz",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 30 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": "hadanky"
+  },
+  {
+    "nazev": "IQ Fitness Logic 1",
+    "pocet_hracu": ["pro jednoho"],
+    "herni_doba": "do 30 minut",
+    "mira_premysleni": "premysleci hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+    "nazev": "Triolet",
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "do 30 minut",
+    "mira_premysleni": "oddechova hra",
+    "typ_hry": ["logicka"],
+    "tema": null
+  },
+  {
+  "nazev": "Luštovky – pokročilý",
+  "pocet_hracu": ["pro jednoho"],
+  "herni_doba": "30-60 minut",
+  "mira_premysleni": "narocna hra",
+  "typ_hry": ["logicka"],
+  "tema": "hadanky"
+  },
+  {
+  "nazev": "Tipni si! Na cesty – Lidské tělo",
+  "pocet_hracu": ["mala skupina (3-4)", "vetsi skupina (5+)"],
+  "herni_doba": "do 30 minut",
+  "mira_premysleni": "oddechova hra",
+  "typ_hry": ["vedomostni", "party"],
+  "tema": "priroda"
+  },
   ]
 }
