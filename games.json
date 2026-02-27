@@ -1,0 +1,93 @@
+{
+"games": [
+  {
+    "nazev": "Přines si svou knihu",
+    "vek": ["6-8", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+    "herni_doba": "do 30 minut",
+    "narocnost": "jednoducha",
+    "zanr": ["vzdelavaci", "kreativni"],
+    "tema": "literatura"
+  },
+  {
+    "nazev": "Agricola",
+    "vek": ["12+", "13+"],
+    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
+    "herni_doba": "60+ minut",
+    "narocnost": "narocnejsi",
+    "zanr": ["strategicke", "ekonomicke"],
+    "tema": "farma"
+  },
+  {
+    "nazev": "Timeline: Česko",
+    "vek": ["8+", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
+    "herni_doba": "do 15 minut",
+    "narocnost": "jednoducha",
+    "zanr": ["vzdelavaci"],
+    "tema": "historie"
+  },
+  {
+    "nazev": "Keltis",
+    "vek": ["8+", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "do 30 minut",
+    "narocnost": "stredni",
+    "zanr": ["logicke"],
+    "tema": "prehistorie"
+  },
+  {
+    "nazev": "Kde leží Řáholec?",
+    "vek": ["8+", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "do 30 minut",
+    "narocnost": "jednoducha",
+    "zanr": ["vzdelavaci"],
+    "tema": "geografie"
+  },
+  {
+    "nazev": "Kde leží Kulikov?",
+    "vek": ["8+", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "do 30 minut",
+    "narocnost": "jednoducha",
+    "zanr": ["vzdelavaci"],
+    "tema": "geografie"
+  },
+  {
+    "nazev": "Brink: Potopené poklady",
+    "vek": ["6-8", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "do 30 minut",
+    "narocnost": "stredni",
+    "zanr": ["dobrodruzstvi", "postrehove"],
+    "tema": "podmorsky"
+  },
+  {
+    "nazev": "12 říší",
+    "vek": ["9-12", "13+"],
+    "pocet_hracu": ["mala skupina (3-4)", "vetsi skupina (5+)"],
+    "herni_doba": "30-60 minut",
+    "narocnost": "stredni",
+    "zanr": ["strategicke"],
+    "tema": "mytologie"
+  },
+  {
+    "nazev": "Brink: Velká podzemní loupež",
+    "vek": ["6-8", "9-12"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "30-60 minut",
+    "narocnost": "stredni",
+    "zanr": ["dobrodruzstvi"],
+    "tema": "podzemni"
+  },
+  {
+    "nazev": "Tzolk'in: Mayský kalendář",
+    "vek": ["12+", "13+"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "herni_doba": "60+ minut",
+    "narocnost": "narocnejsi",
+    "zanr": ["strategicke"],
+    "tema": "historie"
+  }
+]
