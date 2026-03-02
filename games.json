@@ -54,7 +54,7 @@
       "herni_doba": "30-60 minut",
       "mira_premysleni": "premysleci hra",
       "typ_hry": ["strategicka", "budovatelske"],
-      "tema": "fantasy_mytologie"
+      "tema": "dobrodruzstvi"
     },
     {
       "nazev": "12 říší",
@@ -70,7 +70,7 @@
       "herni_doba": "30-60 minut",
       "mira_premysleni": "premysleci hra",
       "typ_hry": ["strategicka"],
-      "tema": "fantasy_mytologie"
+      "tema": "dobrodruzstvi"
     },
     {
       "nazev": "Tzolk'in: Mayský kalendář",
@@ -230,7 +230,7 @@
     "herni_doba": "60-120 minut",
     "mira_premysleni": "oddechova hra",
     "typ_hry": ["pribehova"],
-    "tema": "fantasy_mytologie"
+    "tema": "dobrodruzstvi"
   },
   {
     "nazev": "Párty věž",
@@ -302,7 +302,7 @@
     "herni_doba": "60-120 minut",
     "mira_premysleni": "oddechova hra",
     "typ_hry": ["pribehova"],
-    "tema": "vikingove"
+    "tema": "dobrodruzstvi"
   },
   {
     "nazev": "Změňte osud: Strouha plná krve",
@@ -374,7 +374,7 @@
     "herni_doba": "do 30 minut",
     "mira_premysleni": "oddechova hra",
     "typ_hry": ["rodinna"],
-    "tema": null
+    "tema": "zvirata"
   },
   {
     "nazev": "Honba za prstenem",
