@@ -5,8 +5,8 @@
       "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
       "herni_doba": "do 30 minut",
       "mira_premysleni": "oddechova hra",
-      "typ_hry": ["vzdelavaci"], 
-      "tema": "soucasnost"
+      "typ_hry": ["pribehova"], 
+      "tema": null
     },
     {
       "nazev": "Agricola",
@@ -21,7 +21,7 @@
       "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
       "herni_doba": "do 15 minut",
       "mira_premysleni": "oddechova hra",
-      "typ_hry": ["vedomostni", "historie"],
+      "typ_hry": ["vedomostni"],
       "tema": "historie"
     },
     {
@@ -62,7 +62,7 @@
       "herni_doba": "30-60 minut",
       "mira_premysleni": "oddechova hra",
       "typ_hry": ["party"],
-      "tema": "fantasy_mytologie"
+      "tema": null
     },
     {
       "nazev": "Břink! – Velká podzemní loupež",
@@ -100,7 +100,7 @@
     "nazev": "ALBI IQ Fitness – Vizualní úlohy",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 15 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": null
   },
@@ -108,7 +108,7 @@
     "nazev": "IQ Fitness – Optické klamy",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 15 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": null
   },
@@ -116,7 +116,7 @@
     "nazev": "IQ Fitness – Neobyčejné příhody",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 15 minut",
-    "mira_premysleni": "oddechova hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": null
   },
@@ -132,7 +132,7 @@
     "nazev": "IQ Fitness – Logické úlohy",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 15 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": null
   },
@@ -148,7 +148,7 @@
     "nazev": "Lustovky Expert",
     "pocet_hracu": ["pro dva"],
     "herni_doba": "do 30 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": "hadanky"
   },
@@ -165,7 +165,7 @@
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
     "mira_premysleni": "oddechova hra",
-    "typ_hry": ["vedomostni", "rodinna"],
+    "typ_hry": ["rodinna"],
     "tema": null
   },
   {
@@ -173,7 +173,7 @@
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
     "mira_premysleni": "oddechova hra",
-    "typ_hry": ["vedomostni", "rodinna"],
+    "typ_hry": ["rodinna"],
     "tema": null
   },
   {
@@ -181,14 +181,14 @@
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
     "mira_premysleni": "oddechova hra",
-    "typ_hry": ["vedomostni", "rodinna"],
+    "typ_hry": ["rodinna"],
     "tema": null
   },
     {
     "nazev": "Mozkovna IQ Fitness 3D Řetěz",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 30 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": "hadanky"
   },
@@ -196,7 +196,7 @@
     "nazev": "IQ Fitness Logic 1",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 30 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
     "tema": null
   },
@@ -226,7 +226,7 @@
   },
   {
     "nazev": "Osud dobrodruha",
-    "pocet_hracu": ["pro jednoho"],
+    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
     "herni_doba": "60-120 minut",
     "mira_premysleni": "oddechova hra",
     "typ_hry": ["pribehova"],
@@ -298,15 +298,15 @@
   },
   {
     "nazev": "Dobrodružné výpravy: Vinland",
-    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
     "herni_doba": "60-120 minut",
-    "mira_premysleni": "premysleci hra",
-    "typ_hry": ["strategicka"],
+    "mira_premysleni": "oddechova hra",
+    "typ_hry": ["pribehova"],
     "tema": "vikingove"
   },
   {
     "nazev": "Změňte osud: Strouha plná krve",
-    "pocet_hracu": ["pro jednoho"],
+    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
     "herni_doba": "60-120 minut",
     "mira_premysleni": "premysleci hra",
     "typ_hry": ["pribehova"],
@@ -316,21 +316,21 @@
     "nazev": "IQ Stars",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 30 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
-    "tema": "abstraktni"
+    "tema": null
   },
   {
     "nazev": "IQ Fitness Tangram",
     "pocet_hracu": ["pro jednoho"],
     "herni_doba": "do 30 minut",
-    "mira_premysleni": "premysleci hra",
+    "mira_premysleni": "narocna hra",
     "typ_hry": ["logicka"],
-    "tema": "abstraktni"
+    "tema": null
   },
   {
     "nazev": "Spiknutí: Království Hlubiny",
-    "pocet_hracu": ["mala skupina (3-4)", "vetsi skupina (5+)"],
+    "pocet_hracu": ["pro dva", "mala skupina (3-4)", "vetsi skupina (5+)"],
     "herni_doba": "30-60 minut",
     "mira_premysleni": "premysleci hra",
     "typ_hry": ["strategicka"],
@@ -338,17 +338,17 @@
   },
   {
     "nazev": "Le Havre",
-    "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
+    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
     "herni_doba": "120+ minut",
     "mira_premysleni": "narocna hra",
     "typ_hry": ["ekonomicka", "strategicka"],
-    "tema": "soucasnost"
+    "tema": "historie"
   },
   {
     "nazev": "Odhodlání: Normandie",
     "pocet_hracu": ["pro dva"],
-    "herni_doba": "60-120 minut",
-    "mira_premysleni": "narocna hra",
+    "herni_doba": "30-60 minut",
+    "mira_premysleni": "premysleci hra",
     "typ_hry": ["strategicka"],
     "tema": "historie"
   },
@@ -361,7 +361,7 @@
     "tema": "vikingove"
   },
   {
-    "nazev": "Mission to Mars 2049",
+    "nazev": "Mars 2049",
     "pocet_hracu": ["pro dva", "mala skupina (3-4)"],
     "herni_doba": "60-120 minut",
     "mira_premysleni": "premysleci hra",
@@ -370,7 +370,7 @@
   },
   {
     "nazev": "Pelíšek",
-    "pocet_hracu": ["pro dva"],
+    "pocet_hracu": ["pro jednoho", "pro dva", "mala skupina (3-4)"],
     "herni_doba": "do 30 minut",
     "mira_premysleni": "oddechova hra",
     "typ_hry": ["rodinna"],
